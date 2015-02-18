@@ -17,18 +17,18 @@
 	</head>
 	<body>
 		
-	<div class="container" id="background">
+	<div class="container">
 	<section>
-	<div class="panel panel-info" id="background" id="passforget" name="passforget">
-	<div class="panel-heading"> New password</div>
+	<div class="panel panel-info col-lg"  id="passforget" name="passforget">
+	<div class="panel-heading"> Reset password</div>
 			<div class="panel-body">
 	
-		<form class="form-horizontal" method="post" action="traitement. php"><!--debut du modification de password-->
+		<form class="form-horizontal" id="newpass" name="newpass" method="post" action="traitement. php"><!--debut du modification de password-->
 			
 			
 				<div class="form-group">
 				<label for="nomField" class="col-xs-2"> Pseudo</label>
-				<div class="col-xs-6">
+				<div class="col-xs-4">
 					<input type="text" class="form-control" id="pseudoField" name="pseudo" placeholder="" required />
 					<span class="help-block" id="pseudo_info">Entre votre pseudo</span>
 					</div>
@@ -36,7 +36,7 @@
 			
 				<div class="form-group">
 					<label for="preField" class="col-xs-2"> Mail</label>
-					<div class="col-xs-6">
+					<div class="col-xs-4">
 						<input type="email" class="form-control" id="emailField" name="email" placeholder="" required />
 						<span class="help-block" id="email_info"> Entre votre e-mail</span>
 						</div>
@@ -44,14 +44,14 @@
 					
 				<div class="form-group"><!--debut pour le mots de pass-->
 					<label for="passField" class="col-xs-2"> New Pass</label>
-					<div class="col-xs-6">
+					<div class="col-xs-4">
 		<input type="password" class="form-control" id="passField" name="password" placeholder="" required />
 		<span class="help-block" > Entre votre mot de pass plus long que 8 chiffre</span>
 						</div>
 				</div>
 						<div class="form-group"><!--confirmation du mot de pass-->
 						<label for="passField" class="col-xs-2"> confirme Mot de Pass</label>
-					<div class="col-xs-6">
+					<div class="col-xs-4">
 		<input type="password" class="form-control" id="cpassField" name="confirmepass" placeholder="" required />
 		<span class="help-block" id="confirm_info"> confirme le mot de pass</span>
 					</div>
@@ -60,7 +60,7 @@
 				
 				<div class="panel-footer">
 					<!--button pr continue ou reconmancer-->
-				<button type="submit" class="btn btn-success btn-md">Submit</button>
+				<button type="submit" class="btn btn-success btn-md">Reset</button>
 				
 				
 				
